@@ -1,0 +1,21 @@
+spring:
+  cache:
+    redis:
+      key-prefix: spring.cache.
+      time-to-live: 24h
+    type: redis
+  redis:
+    host: 127.0.0.1
+    database: 0
+    port: 6379
+    password:
+    timeout: 1000ms
+    lettuce:
+      pool:
+        max-active: 8
+        min-idle: 0
+        max-idle: 8
+        max-wait: -1ms
+
+
+
